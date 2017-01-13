@@ -4,8 +4,21 @@ Your challenge, if you wish to accept it (and we sure hope you will), is to opti
 
 To get started, check out the repository and inspect the code.
 
-### Getting started
+### How To Run
+Download the zip file from github. Once on your machine, open the html files with your web browser.
 
+### Pizza Optimizations
+1. In the changePizzaSizes function:
+ extract  ```document.querySelectorAll(".randomPizzaContainer")``` to a var randomPizzas outside of the for loop.
+calculate the length of the randomPizzas array outside of the for loop.
+set the value of newwidth by a swith function
+
+2. In the updatePositions function:
+ calculate the length of items outside of the for loop.
+ extract ```document.body.scrollTop``` to a var top outside of the for loop.
+
+
+### Udacity Instruction
 ####Part 1: Optimize PageSpeed Insights score for index.html
 
 Some useful tips to help you get started:
@@ -32,7 +45,7 @@ Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
 
 ####Part 2: Optimize Frames per Second in pizza.html
 
-To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
+To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js.
 
 You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 
